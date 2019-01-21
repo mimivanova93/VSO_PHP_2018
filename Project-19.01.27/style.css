@@ -1,0 +1,48 @@
+body {
+	background-image: url("pics/cover.jpg");
+	background-size: 100%;
+}
+
+.time {
+	text-align: right;
+	font-size: 120%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-weight: normal;
+	color: #FFF;
+	box-shadow: -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	padding-right: 7px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	margin: 10px;
+	border-radius: 25px;
+}
+
+.h1 {
+	text-align: left;
+	font-family: Papyrus, fantasy;
+	color: #FFF;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.h3{
+	font-family: "Arial Narrow", Arial, sans-serif;
+	color: #FFF;
+	text-align: left;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.para{
+	text-align: center;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 110%;
+	color: #FFF;
+	margin-top: 50px;
+}
+
+.form{
+	text-align: center;
+}
