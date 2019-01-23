@@ -22,6 +22,7 @@
 		<form method="get" action="project.php" class="form">
 			<input type="text" name="string" placeholder="Enter string..."/>
 			<input type="submit" name="submit" value="Check?"/>
+		</form>
 	</div>
 </body>
 </html>
