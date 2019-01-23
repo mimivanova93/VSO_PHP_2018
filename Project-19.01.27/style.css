@@ -27,7 +27,7 @@ body {
 	margin-left: 5px;
 }
 
-.h3{
+.h3 {
 	font-family: "Arial Narrow", Arial, sans-serif;
 	color: #FFF;
 	text-align: left;
@@ -35,15 +35,14 @@ body {
 	margin-left: 5px;
 }
 
-.para{
+.para {
 	text-align: center;
 	font-family: "Arial Narrow", Arial, sans-serif;
-	font-size: 110%;
+	font-size: 130%;
 	color: #FFF;
 	margin-top: 50px;
 }
 
-.form{
+.form {
 	text-align: center;
 }
-
