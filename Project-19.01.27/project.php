@@ -1,32 +1,58 @@
 <?php
 
-// $string_array=$_GET['string'];
+$str=$_GET['string'];
 
-// $string_array=['abc','def','ghi'];
-
-
-// $count=count($string_array);
-
-// for($i=0;$i<=$count;$i++){
-// 	$new_elem=str_split($string_array[$i]);
-// 	$len=count($new_elem);
-// 	$last=$new_elem[$len-1];
-// 	$first=$new_elem[0];
-// 	if()
-// }
-
-$string_array=['abc','def','ghi'];
+$string_array=explode(',', $str);
 $count=count($string_array);
-for($i=0;$i<$count;$i++){
-	$new_elem=str_split($string_array[$i]);
-	$new_elem2=str_split($string_array[$i-1]);
-	$len=count($new_elem);
-	$last=$new_elem[$len-1];
-	$first=$new_elem2[0];
-	if($i>0){
-		$last=$first;
-		//var_dump($string_array[$i]);
+
+$f_el = $string_array[0];
+$len = strlen($f_el);
+$elem = [$f_el[$len-1]];
+
+for($i=1;$i<$count-1;$i++){
+	$el_count = count($elem);
+	$s_len = strlen($string_array[$i]);
+	if ($s_len == 1) {
+		$elem[$el_count-1] = $elem[$el_count-1].$string_array[$i][0];
+	} else {
+		$elem[$el_count-1] = $elem[$el_count-1].$string_array[$i][0];
+		$elem[$el_count] = $string_array[$i][$s_len-1];
 	}
-	var_dump($last);
 }
+
+$el_count = count($elem);
+$elem[$el_count-1] = $elem[$el_count-1].$string_array[$count-1][0];
+
+$num= implode('', array_unique(str_split(implode('', $elem))));
+$split_str=str_split($num, 2);
+$number=count($split_str);
+
+?>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<title>Project</title>
+</head>
+
+<body>
+	<div class="time">
+		<p>Current date and time: <?php $date = date('Y/m/d H:i'); echo $date; ?></p>
+	</div>
+	<div class="h1">
+		<h1>Project: StringChainReplacements</h1>
+	</div>
+	<div>
+		<p class="text">Answer:</p>
+	</div>
+	<div>
+		<p class="answer"><?php echo $number; ?></p>
+	</div>
+</body>
+</html>
+
+
 

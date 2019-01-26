@@ -38,11 +38,31 @@ body {
 .para {
 	text-align: center;
 	font-family: "Arial Narrow", Arial, sans-serif;
-	font-size: 130%;
+	font-size: 120%;
 	color: #FFF;
 	margin-top: 50px;
 }
 
 .form {
 	text-align: center;
+}
+
+.text {
+	text-align: center;
+	font-size: 35px;
+	color: #FFF;
+	font-family: Papyrus, fantasy;
+}
+
+.answer {
+	margin: auto;
+	font-size: 60px;
+	font-family: Papyrus, fantasy;
+	text-align: center;
+	color: #FFF;
+	border: solid;
+	height: 8%;
+	width: 8%;
+	border-radius: 50%;
+	
 }
